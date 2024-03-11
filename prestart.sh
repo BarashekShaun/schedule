@@ -6,5 +6,5 @@ python manage.py makemigrations
 python manage.py migrate
 
 echo "Run app"
-gunicorn schedule.wsgi:application --bind 0.0.0.0:8000
+python -m uvicorn schedule.asgi:application --host 0.0.0.0 --port 8000
 

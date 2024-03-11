@@ -1,8 +1,7 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.contrib.staticfiles.views import serve
-from django.urls import path, re_path
+from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 
 from api.views import EventsView, EventDetailView, create_organization, create_event
